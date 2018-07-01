@@ -1,11 +1,15 @@
 body {
     text-align: center;
+    background-color: #46aeff;
+    font-family: 'Lato', sans-serif;
 }
 
 h1 {
-    font-family: Monoton;
+    font-family: Lato;
     font-size: 70px;
     margin: 0.2em;
+    text-align: center;
+    color: #ffffff;
 }
 
 h2 {
@@ -36,5 +40,116 @@ td {
 }
 
 input[type=number] {
-    width: 6em;
+    width: 4em;
+    border: 1px solid #46aeff;
+    border-radius: 3px;
+    padding: 5px;
 }
+
+p {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.subtitle {
+    display: block;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+img.drawing {
+    width: 100px;
+    padding: 15px;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-options {
+    width: 30%;
+    background: #ffffff;
+    margin: 30px auto 10px auto;
+    padding: 20px 10px;
+    border-bottom: 10px solid #46aeff;
+    box-shadow: 0px 2px 10px #333333;
+}
+
+.canvas {
+    width: 50%;
+    background: #ffffff;
+    margin: 30px auto 10px auto;
+    padding: 20px;
+    border-bottom: 10px solid #46aeff;
+    box-shadow: 0px 2px 10px #333333;
+    
+}
+
+.button {
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #46aeff;
+    padding: 10px 25px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #333333;
+}
+
+.button:hover {
+    background-color: #000000;
+    opacity: 80%;
+}
+
+.inner {
+    padding: 10px;
+}
+
+.design-area {
+    display: inline-block;
+    font-family: inherit;
+}
+
+
+/* I set media queries to make the page responsive at least. */
+
+@media only screen and (min-width:769px) 
+{
+    
+    .user-options
+    {
+        position: absolute;
+        left: 5%;
+        
+    }
+
+    .canvas
+    {
+        position: relative;
+        left: 15%;
+    }
+     
+
+}
+
+@media only screen and (max-width:768px) 
+{
+    
+    .user-options
+    {
+        display: block; 
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+
+    .canvas
+    {
+        display: block; 
+        width: 100%;
+        padding: 20px 0px;
+    }
+     
+
+}
+
+

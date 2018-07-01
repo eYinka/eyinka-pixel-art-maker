@@ -2,28 +2,49 @@
 <html>
 <head>
     <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <h1>Lab: Pixel Art Maker</h1>
+    <span class="subtitle">
+        <em>Carefully made by:</em> <strong> eYinka</strong> <br>
+        <em>Olaryeankarh@gmail.com | | eYinka@outlook.com</em>
+    </span>
+    <div class="design-area">
+        <div class="user-options">
+            <h2>Choose Grid Size</h2> 
+                <form id="sizePicker">
+                    <div class="inner">
+                        Grid Height:
+                        <input type="number" id="inputHeight" name="height" min="1" value="10"> 
+                        <br> 
+                        <br>
+                        Grid Width:
+                        <input type="number" id="inputWidth" name="width" min="1" value="10">
+                    </div>
+                    <input type="submit" class="button">
+                </form>
+                
+            <h2>Pick A Color</h2>
+            <input type="color" id="colorPicker">
+        </div>
+        
+        <div class="canvas"> 
+            <h2>Design Canvas</h2>
+            <p>
+                Choose your preferred grid size (I recommend 30 x 30), fill each block to design out your first name or anything. 
+                You can also change color at anytime you wish. If you wanna draw, err... maybe you should try this:
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" value="10">
-        Grid Width:
-        <input type="number" id="inputWidth" name="width" min="1" value="10">
-        <input type="submit">
-    </form>
-
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
-
-    <h2>Design Canvas</h2>
-    <table id="pixelCanvas"></table>
-
-    <script src="designs.js"></script>
+                <img src="focus.png" class="drawing"/>
+                
+                Goodluck. Haha!
+            </p>
+            <table id="pixelCanvas"></table>
+        </div>
+    </div>
+    <script src="designs.js"></script> 
+    
 </body>
 </html>
